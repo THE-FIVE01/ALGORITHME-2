@@ -1,0 +1,17 @@
+Algorithme          Nombre_compris_1_et_3
+
+Variable 
+        N : Entier 
+Debut 
+
+    N  ←  0 
+
+    Ecrire ("Entrez un nombre entre 1 et 3") 
+    TantQue (N < 1 ou N > 3) 
+        Lire (N)
+        Si (N < 1 ou N > 3) Alors 
+            Ecrire ("Saisie erronée ! Recommencez")
+        FinSi 
+    FinTantQue 
+
+Fin  

@@ -1,0 +1,17 @@
+Algorithme  Facture_photocopie
+
+variables
+            nbr : entier
+            prix : réel
+Début 
+    Ecrire (" Entrer le mombre de copies a éffectuées : ")
+    Lire (nbr)
+    Si (nbr <= 10) Alors 
+        prix  ←  (nbr * 0,1) 
+    SinonSi (nbr <= 30) Alors 
+        prix  ←  (10 * 0,1) + (nbr – 10) * 0,09 
+    Sinon 
+        prix  ←  10 * 0,1 + 20 * 0,09 + (nbr – 30) * 0,08 
+    FinSi 
+    Ecrire ("Le prix total pour les copies est : ", prix) 
+Fin  

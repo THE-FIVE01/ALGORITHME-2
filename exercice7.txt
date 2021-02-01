@@ -1,0 +1,58 @@
+Algorithme       Tarif_chauffeurs
+
+Variables 
+    age, permis, nbr_acc, assurance : Entier 
+    tarif : Chaine de caractères
+    C1, C2, C3 : Booléen
+Début 
+    Ecrire ("Entrez l’âge : ") 
+    Lire (age) 
+    Ecrire ("Entrez le nombre d'années de permis : ") 
+    Lire (permis) 
+    Ecrire ("Entrez le nombre d'accidents : ") 
+    Lire (nbr_acc) 
+    Ecrire ("Entrez le nombre d'années d'assurance : ") 
+    Lire (assurance)
+
+    C1 ← age >= 25 
+    C2 ← permis >= 2 
+    C3 ← assurance > 1 
+    
+    Si Non(C1) et Non(C2) Alors 
+       Si nbr_acc = 0 Alors          
+          tarif ← "Rouge" 
+       Sinon Alors 
+          tarif ← "Refusé" 
+       FinSi 
+    Sinonsi ((Non(C1) et C2) ou (C1 et Non(C2)) Alors 
+       Si nbr_acc = 0 Alors 
+          tarif ← "Orange" 
+       SinonSi nbr_acc = 1 Alors 
+          tarif ← "Rouge" 
+       Sinon 
+          tarif ← "Refusé" 
+       FinSi 
+    Sinon 
+       Si nbr_acc = 0 Alors 
+          tarif ← "Vert" 
+       SinonSi nbr_acc = 1 Alors 
+          tarif ← "Orange" 
+       SinonSi nbr_acc = 2 Alors 
+          tarif ← "Rouge" 
+       Sinon 
+          tarif ← "Refusé" 
+       FinSi 
+    FinSi 
+    Si C3 Alors 
+       Si tarif = "Rouge" Alors 
+          tarif = "Orange" 
+       SinonSi tarif = "Orange" Alors
+        tarif = "Orange" 
+       SinonSi tarif = "Vert" Alors 
+        tarif = "Bleu" 
+       FinSi 
+    FinSi 
+
+    Ecrire ("Votre tarif : ", tarif) 
+Fin 
+

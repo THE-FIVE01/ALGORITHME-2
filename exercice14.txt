@@ -1,0 +1,13 @@
+Algoritme     Factorielle
+
+Variables 
+            i, N, F : Entier 
+Debut 
+    Ecrire ("Entrez un nombre : ")
+    Lire (N)
+    F  ←  1 
+    Pour i  ←  2 à N 
+        F  ←  F * i 
+        i++
+    Ecrire ("La factorielle du nombre entré est : ", F)
+Fin  

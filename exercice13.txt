@@ -1,0 +1,15 @@
+Algorithme     Somme_entier_nbre_départ
+
+Variables 
+        i, Som, N : Entier 
+Debut 
+    Ecrire ("Entrez un nombre : ") 
+    Lire (N) 
+    
+    Som  ←  0 
+    Pour i  ←  1 à N 
+        Som  ←  Som + i 
+        i++
+    FinPour
+    Ecrire ("La somme est : ”, Som") 
+Fin  

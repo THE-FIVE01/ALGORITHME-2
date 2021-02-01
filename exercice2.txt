@@ -1,0 +1,22 @@
+Algorithme  Heure_Minutes
+
+variables
+            
+        h, m : Entier 
+
+Début 
+
+    Ecrire ("Entrez une heure et les minutes : ") 
+    Lire(h, m)
+
+    m  ←  m + 1 
+    Si (m = 60) Alors 
+        m  ←  0 
+        h  ←  h + 1 
+    FinSi 
+    Si (h = 2)4 Alors 
+        h  ←  0 
+    FinSi 
+    Ecrire ("Dans une minute il sera ", h, " heure(s) ", m, " minute(s)") 
+    
+Fin

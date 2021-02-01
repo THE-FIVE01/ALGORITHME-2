@@ -1,0 +1,14 @@
+Algorithme tutu_tata
+
+variables
+            tutu, toto : entier
+            tata : chaîne de caractères
+Début
+    
+    Si Tutu <= Toto + 4  et Tata <> “OK“ Alors 
+        Tutu  ←  Tutu - 1 
+    Sinon 
+        Tutu  ←  Tutu + 1 
+    Finsi  
+
+Fin

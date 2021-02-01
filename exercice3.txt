@@ -1,0 +1,22 @@
+Algorithme Heure_Minutes_Secondes
+
+Variables 
+            h, m, s en Entier 
+Début 
+
+    Ecrire ("Entrez une heure, les minutes et les secondes : )
+    Lire (h, m, s) 
+    s  ←  s + 1 
+    Si (s = 60) Alors 
+        s  ←  0 
+        m  ←  m + 1 
+    FinSi 
+    Si (m = 60) Alors 
+        m  ←  0 
+        h  ←  h + 1 
+    FinSi 
+    Si (h = 24) Alors 
+        h  ←  0 
+    FinSi 
+    Ecrire ("Dans une seconde il sera ", h, " heure(s) ", m, " minute(s) et ", s," seconde(s)") 
+Fin  

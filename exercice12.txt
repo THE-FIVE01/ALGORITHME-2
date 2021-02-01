@@ -1,0 +1,13 @@
+Algorithme      Table_multiplication
+
+Variables 
+            N, i : Entier 
+Debut 
+    Ecrire ("Entrez un nombre : ")
+    Lire (N)
+    Ecrire ("La table de multiplication de ce nombre est : ") 
+    Pour i  ←  1 à 10 
+        Ecrire (N," x ",i, " = ", n*i) 
+        i++
+    FinPour 
+Fin  

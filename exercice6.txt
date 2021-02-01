@@ -1,0 +1,23 @@
+Algorithme     Resultat_election
+
+Variables 
+        sc1, sc2, sc3, sc4 : réel 
+        C1, C2, C3, C4 : booléen
+Début 
+    Ecrire ("Entrez les scores des quatre prétendants : ") 
+    Lire (sc1, sc2, sc3, sc4) 
+
+    C1  ←  (sc1 > 50) 
+    C2  ←  (sc2 > 50) ou (sc3 > 50) ou (sc4 > 50)
+    C3  ←  (sc1 >= sc2) et (sc1 >= sc3) et (sc1 >= sc4) 
+    C4  ←  (sc1 >= 12,5)
+    Si C1 Alors 
+        Ecrire ("Elu au premier tour") 
+    Sinonsi C2 ou Non(C4) Alors 
+        Ecrire ("Battu, éliminé, sorti !!!") 
+    SinonSi C3 Alors 
+        Ecrire ("Ballotage favorable") 
+    Sinon 
+        Ecrire ("Ballotage défavorable") 
+    FinSi 
+Fin  
