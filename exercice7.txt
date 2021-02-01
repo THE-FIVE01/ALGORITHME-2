@@ -24,6 +24,7 @@ Début
        Sinon Alors 
           tarif ← "Refusé" 
        FinSi 
+    
     Sinonsi ((Non(C1) et C2) ou (C1 et Non(C2)) Alors 
        Si nbr_acc = 0 Alors 
           tarif ← "Orange" 
@@ -32,7 +33,8 @@ Début
        Sinon 
           tarif ← "Refusé" 
        FinSi 
-    Sinon 
+    
+    Sinon
        Si nbr_acc = 0 Alors 
           tarif ← "Vert" 
        SinonSi nbr_acc = 1 Alors 
@@ -42,12 +44,12 @@ Début
        Sinon 
           tarif ← "Refusé" 
        FinSi 
-    FinSi 
+    
     Si C3 Alors 
        Si tarif = "Rouge" Alors 
           tarif = "Orange" 
        SinonSi tarif = "Orange" Alors
-        tarif = "Orange" 
+        tarif = "Vert" 
        SinonSi tarif = "Vert" Alors 
         tarif = "Bleu" 
        FinSi 
