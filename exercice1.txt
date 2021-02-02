@@ -4,7 +4,13 @@ variables
             tutu, toto : entier
             tata : chaîne de caractères
 Début
-    
+    Ecrire("Entrer la valeur de tutu")
+    Lire(tutu)
+    Ecrire("Entrer la valeur de toto")
+    Lire(toto)
+    Ecrire("Entrer la valeur de tata")
+    Lire(tata)
+    Ecrire
     Si Tutu <= Toto + 4  et Tata <> “OK“ Alors 
         Tutu  ←  Tutu - 1 
     Sinon 
