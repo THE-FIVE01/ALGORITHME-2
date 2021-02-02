@@ -10,7 +10,7 @@ Début
         si (sexe = "M" et age > 20) Alors
             Ecrire("Vous payer l'impôt")
         sinon
-            si(sexe = "F" et age >=18 et age <= 35) Alors
+            si(sexe = "F" et (age >=18 et age <= 35)) Alors
             Ecrire("Vous payer l'impôt")
             finsi
         else {
