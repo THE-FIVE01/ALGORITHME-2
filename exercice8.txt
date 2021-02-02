@@ -1,6 +1,3 @@
-
-
-
 Algorithme      Date_valide
 
 Variables 
