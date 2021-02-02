@@ -9,9 +9,10 @@ Debut
         Lire (N) 
         Si (i = 1 ou N > PG) Alors 
             PG  ←  N 
-            PPG ← i
+            PPG ← is
         FinSi 
         i++ 
+    FinPour
     Ecrire ("Le nombre le plus grand était : ", PG)
     Ecrire ("Le nombre ",PG," a été saisi en position numéro ", PPG)
  

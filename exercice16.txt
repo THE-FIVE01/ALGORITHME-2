@@ -1,1 +1,23 @@
 Algorithme    Plus_grand_nombre_2
+
+Variables 
+            i,  N, PG, PPG : Entier 
+Debut 
+    N  ←  1
+    i  ←  0
+    
+    PG  ←  0 
+    TantQue N <> 0
+        Ecrire ("Entrez un nombre : ") 
+        Lire (N) 
+        i  ←  i + 1
+        Si (i = 1 ou N > PG) Alors 
+            PG  ←  N 
+            PPG ← i
+        FinSi 
+    FinTantQue
+    
+    Ecrire ("Le nombre le plus grand était : ", PG)
+    Ecrire ("Le nombre ",PG," a été saisi en position numéro ", PPG)
+ 
+Fin 
