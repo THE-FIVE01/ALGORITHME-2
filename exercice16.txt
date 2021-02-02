@@ -16,8 +16,7 @@ Debut
             PPG ← i
         FinSi 
     FinTantQue
-    
     Ecrire ("Le nombre le plus grand était : ", PG)
     Ecrire ("Le nombre ",PG," a été saisi en position numéro ", PPG)
- 
+    
 Fin 
