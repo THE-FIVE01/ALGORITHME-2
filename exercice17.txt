@@ -1,1 +1,32 @@
-      
+Algorithme        Coupure_Billets_Euro
+
+Variables 
+            FF, somdue, M, IPG, Reste, Nb10F, Nb5F : Entier 
+
+Debut 
+    FF  ←  1 
+    somdue  ←  0 
+    TantQue FF <> 0 
+        Ecrire “Entrez le montant : ” 
+        Lire FF 
+        somdue  ←  somdue + FF 
+    FinTantQue 
+    Ecrire “Vous devez :”, FF, “ francs” 
+    Ecrire ”Montant versé :” 
+    Lire M 
+    Reste  ←  M - FF 
+    Nb10F  ←  0 
+    TantQue Reste >= 10 
+        Nb10F  ←  Nb10F + 1 
+        Reste  ←  Reste – 10 
+    FinTantQue 
+    Nb5F  ←  0 
+    Si Reste >= 5 
+        Nb5F  ←  1 
+        Reste  ←  Reste – 5 
+    FinSi 
+    Ecrire “Rendu de la monnaie :” 
+    Ecrire “Pièces de 10 F : ”, Nb10F 
+    Ecrire “Pièces de  5 F : ”, Nb5F 
+    Ecrire “Pièces de  1 F : ”, reste 
+Fin  
